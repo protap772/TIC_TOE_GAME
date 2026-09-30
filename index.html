@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Tic Tac Toe</h1>
+      <h2 class="turn-for">Turn For</h2>
+
+      <div class="turn">
+        <div class="turn--O box--turn">O</div>
+        <div class="turn--X box--turn">X</div>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td class="cell" id="0">O</td>
+            <td class="cell" id="1">X</td>
+            <td class="cell" id="2"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="end-game hidden">X WIN</div>
+      <div class="button-container">
+        <button class="bot button">bot</button>
+        <button class="reset button hidden">play again</button>
+        <button class="friend button">friend</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
